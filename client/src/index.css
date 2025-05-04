@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* card */
+
+.card {
+    perspective: 1000px;
+    margin: auto;
+}
+
+.card-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    padding-bottom: 5px;
+}
+
+.card:hover .card-content {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+.card-content h2, .card-content p {
+    margin: 5px;
+    text-align: center;
+}
+
+/* card */
+
+/* Cycle */
+.Cycle{
+    visibility: hidden;
+    width: 150px;
+    height: 150px;
+    border: 5px solid yellow;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    top: -35px;
+    left: -75px;
+    animation: CycleAnimation 3s linear 1s infinite  backwards ;
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+}
+
+.Cycle:hover{
+    visibility: visible;
+}
+@keyframes CycleAnimation {
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 90deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    75%{
+        rotate: 270deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+/* Cycle */
+
+/* card */
+
+/* card */
+
+.flex-12{
+    
+    flex:1.2;
+}
+.flex-08{
+    
+    flex:0.8;
+    
+}
